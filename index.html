@@ -53,15 +53,14 @@
   <!-- Preload the avatar for faster first paint -->
   <link rel="preload" as="image" href="assets/portrait-foret.jpg" imagesrcset="assets/portrait-foret.jpg" imagesizes="(max-width:600px) 60vw, 300px">
   
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J70JR3BXRL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-J70JR3BXRL');
-</script>
+  <!-- Google tag (gtag.js) avec ton ID GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J70JR3BXRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date());
+    gtag('config', 'G-J70JR3BXRL');
+  </script>
 </head>
 <body>
   <header class="hero container" id="top">
@@ -98,7 +97,12 @@
       </div>
     </section>
 
-    <section class="card" id="contact">
+    <section id="recherche" class="card">
+<h2>Ce que je recherche</h2>
+<p>J’aime les filles naturelles, sportives et souriantes. La curiosité et l’ouverture d’esprit comptent beaucoup pour moi, ainsi qu’un petit côté taquin qui rend les échanges amusants. Je ne cherche pas quelqu’un de parfait, juste une personne simple, sincère et avec qui partager de vrais moments.</p>
+</section>
+
+<section class="card" id="contact">
       <h2>Contact rapide</h2>
       <div class="cta-wrap" role="group" aria-label="Moyens de contact et partage">
         <a class="btn primary" href="mailto:lefourtout@hotmail.com?subject=Vu%20%C3%A0%20Mangalaxy&body=Hello%20!">
