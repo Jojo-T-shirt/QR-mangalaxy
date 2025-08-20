@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>José‑Luis – Tu m’as scanné à Mangalaxy ?</title>
+  <meta name="description" content="Salut ! Moi c’est José‑Luis. Étudiant en BTS CG, passionné d’audiovisuel, d’anime et de sport. Tu m’as croisé à Mangalaxy ? Fais coucou et partage la page !" />
+  <meta property="og:title" content="Tu m’as scanné à Mangalaxy ?" />
+  <meta property="og:description" content="Étudiant BTS CG · Audiovisuel · Anime · Running. Dis bonjour, partage la page, et écris‑moi !" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/portrait-foret.jpg" />
+  <link rel="icon" href="assets/portrait-foret.jpg"/>
+  <meta name="theme-color" content="#0b1324" />
+  <style>
+    :root{ --bg:#0b1324; --bg-2:#0f1a33; --text:#e9edf5; --muted:#b9c2d9; --accent:#6ee7b7; --accent-2:#a78bfa; --card:#121b33cc; --shadow:0 10px 30px rgba(0,0,0,.25); --radius:18px; --ring:#ffffff33; }
+    @media (prefers-color-scheme: light){ :root{ --bg:#f6f7fb; --bg-2:#eef1f8; --text:#171a21; --muted:#4b5566; --card:#ffffffee; --shadow:0 10px 30px rgba(0,0,0,.08); --ring:#00000022; } }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:linear-gradient(180deg,var(--bg),var(--bg-2));color:var(--text);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-tap-highlight-color:transparent}
+    img{max-width:100%;height:auto;display:block;background:#0a0a0a10}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:960px;margin-inline:auto;padding:18px}
+    .chip{display:inline-flex;align-items:center;gap:.5rem;padding:.5rem .75rem;border-radius:999px;background:linear-gradient(to bottom right,#0000,#0002),var(--card);box-shadow:var(--shadow);border:1px solid #ffffff1a}
+    .btn{display:inline-flex;align-items:center;gap:.65rem;padding:14px 16px;border-radius:14px;border:1px solid var(--ring);background:linear-gradient(to bottom right,#ffffff0a,#0000000a);color:var(--text);font-weight:700;box-shadow:var(--shadow);transition:transform .12s ease;min-height:48px;justify-content:center}
+    .btn:active{transform:scale(.98)}
+    .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#0a0a0a;border-color:#0000}
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+    header.hero{padding:26px 0 10px}
+    .hero-card{display:grid;gap:16px;grid-template-columns:1.1fr .9fr;align-items:center;background:var(--card);border:1px solid #ffffff1a;border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
+    .hero h1{font-size:clamp(24px,6vw,38px);margin:0}
+    .hero p{margin:0;color:var(--muted);font-size:1rem;line-height:1.55}
+    .avatar{aspect-ratio:1/1;width:min(320px,100%);margin-left:auto;border-radius:20px;border:1px solid #ffffff1a;background:#10192e;overflow:hidden}
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    main section{padding:14px 0}
+    h2{font-size:clamp(20px,5vw,26px);margin:0 0 10px}
+    .card{background:var(--card);border:1px solid #ffffff1a;border-radius:var(--radius);padding:14px;box-shadow:var(--shadow)}
+    .muted{color:var(--muted)}
+    .grid{display:grid;gap:10px;grid-template-columns:repeat(12,1fr)}
+    /* Mobile-first: images BIG and thumb-friendly */
+    .gallery{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .gallery img{width:100%;height:100%;object-fit:cover;border-radius:14px;border:1px solid #ffffff1a}
+    /* One-per-row on very small screens */
+    @media (max-width:460px){ .gallery{grid-template-columns:1fr} }
+    /* Larger screens: 3 columns */
+    @media (min-width:880px){ .gallery{grid-template-columns:1fr 1fr 1fr} }
+    .cta-wrap{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    @media (min-width:680px){ .cta-wrap{grid-template-columns:repeat(4,1fr)} }
+    footer{padding:22px 0 38px;color:var(--muted);text-align:center}
+    .divider{height:1px;background:linear-gradient(90deg,#0000,#ffffff30,#0000);margin:12px 0}
+    @media (max-width: 860px){ .hero-card{grid-template-columns:1fr;text-align:center}.avatar{margin:0 auto} }
+    @media (prefers-reduced-motion: reduce){ *{animation:none!important;transition:none!important} }
+  </style>
+  <!-- Preload the avatar for faster first paint -->
+  <link rel="preload" as="image" href="assets/portrait-foret.jpg" imagesrcset="assets/portrait-foret.jpg" imagesizes="(max-width:600px) 60vw, 300px">
+</head>
+<body>
+  <header class="hero container" id="top">
+    <div class="hero-card">
+      <div class="chip">👋 Tu m’as scanné à Mangalaxy&nbsp;?</div>
+      <h1>Salut, moi c’est José‑Luis</h1>
+      <p>Je suis timide et je n’aime pas déranger. Ce QR code, c’est pour me présenter sans pression. Merci d’être passé·e&nbsp;! Si le feeling est là, écris‑moi ou partage la page à une amie. 💌</p>
+      <div class="row cta" role="group" aria-label="Actions principales">
+        <a class="btn primary" id="btn-message" href="mailto:lefourtout@hotmail.com?subject=Vu%20%C3%A0%20Mangalaxy&body=Coucou%20Jos%C3%A9%E2%80%91Luis%2C%20on%20s%27est%20crois%C3%A9%20%C3%A0%20Mangalaxy%20!%20">
+          ✉️ Écrire un message
+        </a>
+        <button class="btn" id="btn-share" type="button">📤 Partager la page</button>
+      </div>
+      <div class="avatar" role="img" aria-label="Portrait de José‑Luis">
+        <img src="assets/portrait-foret.jpg" alt="Portrait de José‑Luis en extérieur" width="800" height="800" loading="eager" decoding="async" fetchpriority="high"/>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>À propos</h2>
+      <p class="muted">24 ans · calme en apparence, mais toujours prêt à surprendre. J’aime la production vidéo, courir, les soirées anime & chill, et les rencontres simples et sincères.</p>
+    </section>
+
+    <section class="card" id="galerie">
+      <h2>Galerie</h2>
+      <div class="gallery" aria-live="polite">
+        <!-- Astuce low‑data : compresse les images (≤ 250 KB) et garde ces noms -->
+        <img src="assets/running.jpg" alt="Moi en course à pied" loading="lazy" decoding="async" width="900" height="1200">
+        <img src="assets/hobby-peinture.jpg" alt="Peinture de figurines" loading="lazy" decoding="async" width="1200" height="900">
+        <img src="assets/concert.jpg" alt="Au concert / festival" loading="lazy" decoding="async" width="1200" height="900">
+        <img src="assets/portrait-chill.jpg" alt="Portrait posé, ambiance chill" loading="lazy" decoding="async" width="900" height="1200">
+      </div>
+    </section>
+
+    <section class="card" id="contact">
+      <h2>Contact rapide</h2>
+      <div class="cta-wrap" role="group" aria-label="Moyens de contact et partage">
+        <a class="btn primary" href="mailto:lefourtout@hotmail.com?subject=Vu%20%C3%A0%20Mangalaxy&body=Hello%20!">
+          ✉️ Email
+        </a>
+        <button class="btn" id="btn-copy-mail" type="button">📋 Copier mon e‑mail</button>
+        <button class="btn" id="btn-share-2" type="button">📲 Partager</button>
+        <button class="btn" id="btn-copy-link" type="button">🔗 Copier le lien</button>
+      </div>
+      <p class="muted" id="copied-state" aria-live="polite" style="margin-top:8px"></p>
+      <div class="divider"></div>
+      <p class="muted" style="margin:0">Pas de cookies, pas de traçage. Juste un bonjour ☺️</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> José‑Luis • Bonne convention !</p>
+  </footer>
+
+  <script>
+    // Année dynamique
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Web Share API (avec repli)
+    const shareData = {
+      title: document.title,
+      text: "Je t’envoie la page de José‑Luis (vu à Mangalaxy)",
+      url: window.location.href
+    };
+
+    const copiedState = document.getElementById('copied-state');
+    function notify(msg){ copiedState.textContent = msg; setTimeout(()=> copiedState.textContent = '', 2500); }
+
+    async function doShare(){
+      try{
+        if(navigator.share){ await navigator.share(shareData); }
+        else{ await navigator.clipboard.writeText(window.location.href); notify('Lien copié ✔'); }
+      }catch(e){ /* annulation */ }
+    }
+
+    document.getElementById('btn-share').addEventListener('click', doShare);
+    document.getElementById('btn-share-2').addEventListener('click', doShare);
+
+    // Copier lien
+    document.getElementById('btn-copy-link').addEventListener('click', async ()=>{
+      try{ await navigator.clipboard.writeText(window.location.href); notify('Lien copié ✔'); }catch(e){ notify('Impossible de copier le lien'); }
+    });
+
+    // Copier e‑mail
+    document.getElementById('btn-copy-mail').addEventListener('click', async ()=>{
+      try{ await navigator.clipboard.writeText('lefourtout@hotmail.com'); notify('E‑mail copié ✔'); }catch(e){ notify('Impossible de copier l’e‑mail'); }
+    });
+
+    // Performance: évite reflows pendant scroll sur mobile
+    if('scrollBehavior' in document.documentElement.style){
+      document.querySelectorAll('a[href^="#"]').forEach(a=>{
+        a.addEventListener('click', e=>{
+          const id = a.getAttribute('href').slice(1);
+          const el = document.getElementById(id);
+          if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
+        });
+      });
+    }
+  </script>
+  <script>
+    // Fallback si une image échoue à se charger (mauvais chemin, format, etc.)
+    (function(){
+      var placeholder = 'data:image/svg+xml;utf8,\
+      <svg xmlns="http://www.w3.org/2000/svg" width="800" height="600">\
+        <rect width="100%" height="100%" fill="%23101a2e"/>\
+        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%23aab5cc" font-family="system-ui, sans-serif" font-size="22">Image introuvable</text>\
+      </svg>';
+      document.querySelectorAll('img').forEach(function(img){
+        img.addEventListener('error', function(){
+          if(!img.dataset.fallback){
+            img.dataset.fallback = '1';
+            img.src = placeholder;
+            img.removeAttribute('srcset');
+          }
+        }, { once:true });
+      });
+    })();
+  </script>
+</body>
+</html>
